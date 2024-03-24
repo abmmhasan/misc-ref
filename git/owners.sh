@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # git fame owner generator
 owners() {
   for f in $(git ls-files); do
