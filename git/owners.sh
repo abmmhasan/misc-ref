@@ -1,5 +1,10 @@
 #!/bin/bash
 
+if ! test -d "./.git"; then
+  echo "Error: Not a git repository!" >&2
+  exit 1
+fi
+
 # git fame owner generator
 for f in $(git ls-files); do
   # filename
